@@ -20,9 +20,16 @@
 
     <style name="AppWidgetLabel" parent="AppWidgetText">
         <item name="android:textStyle">bold</item>
+        <item name="android:textSize">10dp</item>
     </style>
 
     <style name="AppWidgetText" parent="Base.TextAppearance.AppCompat.Subhead">
         <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">10dp</item>
+    </style>
+
+    <style name="AppWidgetButton" parent="Base.Widget.AppCompat.Button">
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:textSize">10dp</item>
     </style>
 </resources>

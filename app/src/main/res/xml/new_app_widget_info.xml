@@ -20,6 +20,7 @@
         86400000 = 24h
      If you set updatePeriodMillis to less than 1,800,000 milliseconds(30min),
      the app widget manager only sends update requests every 30 minutes. Because updates use system resources,
+     The Android app widget manager sends an update broadcast intent.
     -->
 
     <!--
