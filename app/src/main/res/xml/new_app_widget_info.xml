@@ -4,7 +4,7 @@
     android:initialKeyguardLayout="@layout/new_app_widget"
     android:initialLayout="@layout/new_app_widget"
     android:minWidth="110dp"
-    android:minHeight="110dp"
+    android:minHeight="180dp"
     android:previewImage="@drawable/example_appwidget_preview"
     android:previewLayout="@layout/new_app_widget"
     android:resizeMode="horizontal|vertical"
@@ -14,6 +14,13 @@
     android:widgetCategory="home_screen" />
 
     <!--Declares to OS the Widget metadata-->
+
+    <!--
+        android:updatePeriodMillis="86400000"
+        86400000 = 24h
+     If you set updatePeriodMillis to less than 1,800,000 milliseconds(30min),
+     the app widget manager only sends update requests every 30 minutes. Because updates use system resources,
+    -->
 
     <!--
     android:initialLayout="@layout/new_app_widget"
