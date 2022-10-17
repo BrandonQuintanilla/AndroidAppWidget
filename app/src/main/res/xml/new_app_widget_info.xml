@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:description="@string/app_widget_description"
+    android:initialKeyguardLayout="@layout/new_app_widget"
+    android:initialLayout="@layout/new_app_widget"
+    android:minWidth="110dp"
+    android:minHeight="110dp"
+    android:previewImage="@drawable/example_appwidget_preview"
+    android:previewLayout="@layout/new_app_widget"
+    android:resizeMode="horizontal|vertical"
+    android:targetCellWidth="2"
+    android:targetCellHeight="2"
+    android:updatePeriodMillis="86400000"
+    android:widgetCategory="home_screen" />
+
+    <!--Declares to OS the Widget metadata-->
+
+    <!--
+    android:initialLayout="@layout/new_app_widget"
+    Defines the layout resource that your app widget will use
+    -->
+
+    <!--
+        android:initialKeyguardLayout="@layout/new_app_widget"
+        This attribute enables you to provide a different layout for keyguard (lock screen) widgets.
+        Previous versions of Android (4.2/API 17 to 4.4/API 19) allowed widgets to appear on the lock screen
+         that functionality is deprecated.
+    -->
+
+    <!--
+        android:minHeight and android:minWidth
+        When your widget is added to a user's home screen, it is stretched both horizontally and vertically
+        to occupy as many grid cells as satisfy the minWidth and minHeight values.
+        The rule for how many dp fit into a grid cell is based on the equation 70 × grid_size − 30,
+        where grid_size is the number of cells you want your widget to take up.
+        # of cells (columns or rows)
+
+        minWidth or minHeight
+        1 -40 dp
+        2 - 110 dp
+        3 - 180 dp
+        4 - 250 dp
+    -->
